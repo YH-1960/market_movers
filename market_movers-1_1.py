@@ -32,8 +32,8 @@ if st.button("分析する"):
             if len(df) < 2:
                 continue
 
-            start_price = df["Close"].iloc[0]
-            end_price = df["Close"].iloc[-1]
+            start_price = float(df["Close"].iloc[0])
+            end_price = float(df["Close"].iloc[-1])
 
             change_pct = (end_price - start_price) / start_price * 100
 

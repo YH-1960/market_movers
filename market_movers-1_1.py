@@ -41,7 +41,7 @@ if st.button("分析する"):
                 "symbol": symbol,
                 "start": start_price,
                 "end": end_price,
-                "change_pct": change_pct
+                "change_pct": float(change_pct.iloc[-1])
             })
 
         except Exception as e:
